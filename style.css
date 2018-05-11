@@ -5,13 +5,15 @@
 
 body{
 	background-color: white;
-	font-family: "Helvetica", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
+	font-weight: 300;
 }
 
 h1{
 	text-transform: uppercase;
 	font-size: 36px;
+	font-weight: 300;
 } 
 
 h2 {
@@ -29,10 +31,74 @@ section{
 	margin: 0 auto;
 }
 
+.container-large{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.button{
+	background-color: blue;
+	color:white;
+	border-radius: 5px;
+	padding: 10px 15px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 5px;
+	transition: all 0.3s;
+}
+
+.button:hover{
+	background-color: #6f6fec;
+}
+
+.button-green{
+	background-color: green;
+}
+
+.button-green:hover{
+	background-color: yellow;
+}
+
 /* Header */
 header
 {
 	color: white;
 	background-color: black;
 	text-align: center;
+	padding:100px;
+}
+
+/* Navegación */
+nav
+{
+	background-color: red;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+}
+
+.logo {
+	float: left;
+}
+
+.logo img{
+	width: 125px;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 10px;
+}
+
+nav li a{
+	color: white;
+	text-decoration: none;
+	opacity: 0.5;
+	transition: opacity 0.3s;
+}
+
+nav li a:hover{
+	opacity: 1;
 }
